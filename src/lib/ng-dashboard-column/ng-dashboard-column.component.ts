@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Column } from "../column";
 
 @Component({
-  selector: 'lib-ng-dashboard-column',
+  selector: 'ng-dashboard-column',
   templateUrl: './ng-dashboard-column.component.html',
   styleUrls: ['./ng-dashboard-column.component.scss']
 })
 export class NgDashboardColumnComponent implements OnInit {
-
+  @Input() column: Column;
   constructor() { }
 
   ngOnInit() {

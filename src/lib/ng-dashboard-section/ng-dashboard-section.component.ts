@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-dashboard-section.component.scss']
 })
 export class NgDashboardSectionComponent implements OnInit {
-
+  columns = [];
   constructor() { }
 
   ngOnInit() {
