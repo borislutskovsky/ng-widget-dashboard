@@ -8,6 +8,8 @@ import { Column } from "../column";
 })
 export class NgDashboardColumnComponent implements OnInit {
   @Input() column: Column;
+
+  widgets: [];
   constructor() { }
 
   ngOnInit() {

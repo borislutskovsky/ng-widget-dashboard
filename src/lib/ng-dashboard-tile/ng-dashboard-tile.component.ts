@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Widget } from '../widget';
 
 @Component({
   selector: 'ng-dashboard-tile',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-dashboard-tile.component.scss']
 })
 export class NgDashboardTileComponent implements OnInit {
-
+  @Input() widget: Widget;
+  
   constructor() { }
 
   ngOnInit() {

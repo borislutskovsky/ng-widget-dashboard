@@ -1,1 +1,5 @@
-<p>ng-dashboard-column works!</p>
+<ul class="ng-dashboard-tile-container">
+  <li *ngFor="let widget of widgets">
+    <ng-dashboard-tile widget="widget"></ng-dashboard-tile>
+  </li>  
+</ul>
