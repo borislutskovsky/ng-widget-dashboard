@@ -1,4 +1,7 @@
 import { Column } from "./column";
 export class Section {
-  columns: Column[]
+  columns: Column[];
+  id: number;
+  title: string;
+  
 }
