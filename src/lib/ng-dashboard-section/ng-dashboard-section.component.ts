@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Section } from "../section";
 
 @Component({
   selector: 'ng-dashboard-section',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-dashboard-section.component.scss']
 })
 export class NgDashboardSectionComponent implements OnInit {
-  columns = [];
+  @Input() section: Section;
   constructor() { }
 
   ngOnInit() {

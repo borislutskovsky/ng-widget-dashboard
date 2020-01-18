@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Dashboard } from "./dashboard";
 
 @Component({
   selector: 'ng-dashboard',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class NgDashboardComponent implements OnInit {
-
+  @Input() dashboard: Dashboard;
   configuration: {
     columns: [
       
