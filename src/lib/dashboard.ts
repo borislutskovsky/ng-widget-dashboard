@@ -2,5 +2,10 @@ import { Section } from "./section";
 
 export class Dashboard {
 
-  section: Section[];
+  sections: Section[];
+  euid: number;
+  title: string;
+  description: string;
+  panelSettings: object;
+  
 }
